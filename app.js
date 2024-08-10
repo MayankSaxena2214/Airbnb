@@ -65,10 +65,9 @@ const sessionOptions={
         httpOnly:true,
     },
 }
-// app.get("/",(req,res)=>{
-//     console.log("Hi , I am root");
-//     res.send("Root path");
-// });
+app.get("/",(req,res)=>{
+   res.redirect("/listings");
+});
 //checked
 
 app.use(session(sessionOptions));
