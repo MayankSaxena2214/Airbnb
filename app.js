@@ -65,9 +65,7 @@ const sessionOptions={
         httpOnly:true,
     },
 }
-app.get("/",(req,res)=>{
-   res.redirect("/listings");
-});
+
 //checked
 
 app.use(session(sessionOptions));
